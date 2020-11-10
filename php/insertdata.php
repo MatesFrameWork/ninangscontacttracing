@@ -42,6 +42,6 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
   fputcsv($file,array($dateString,$name,$mobileNumber,$email,$address,$temperature,$update));
   fclose($file);
 
-  header("location: ../insertdata.html");
+  header("location: ../insertdata.php");
 }
 ?>
