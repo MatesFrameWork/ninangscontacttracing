@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
   
   
 
-  $file = fopen("..\contact_tracing.csv","a");
+  $file = fopen("..\contact_tracing.csv","a+");
   fputcsv($file,array($dateString,$name,$mobileNumber,$email,$address,$temperature,$update));
   fclose($file);
 
