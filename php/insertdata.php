@@ -33,17 +33,23 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $update = 0;
   }
 
-  $date   = new DateTime(); //this returns the current date time
-  $dateString = $date->format('Y-m-d');
-  $krr    = explode('-', $dateString);
-  $dateString = implode("", $krr);
-  
-  
+  $server = "localhost";
+  $user = "root";
+  $pass = "Aeron0005";
+  $dbname = "customers";
+  $conn=mysqli_connect($server,$user,$pass,$dbname);
 
-  $file = fopen("..\contact_tracing.csv","a+");
-  fputcsv($file,array($dateString,$name,$mobileNumber,$email,$address,$temperature,$update));
-  fclose($file);
+  if ($conn){
 
-  header("location: ../insertdata.php");
+    $insert = "INSERT INTO contact_tracing_tb (name, mobile_number, email, address, temperature, update_news)
+    VALUES('" .$name. "','".$mobileNumber."','".$email."','".$address."','".$temperature."','".$update."')";
+
+    mysqli_query($conn,$insert);
+
+  }
+
+    mysqli_close($conn);
+
+  // header("location: ../insertdata.php");
 }
 ?>
