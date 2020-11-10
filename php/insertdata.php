@@ -38,9 +38,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
   $krr    = explode('-', $dateString);
   $dateString = implode("", $krr);
   
-//   ..\contact_tracing.csv
+  
 
-  $file = fopen("https://github.com/MatesFrameWork/ninangscontacttracing/blob/main/contact_tracing.csv","a");
+  $file = fopen("..\contact_tracing.csv","a");
   fputcsv($file,array($dateString,$name,$mobileNumber,$email,$address,$temperature,$update));
   fclose($file);
 
