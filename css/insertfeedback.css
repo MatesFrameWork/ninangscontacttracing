@@ -1,0 +1,173 @@
+@font-face {
+    font-family: CL-Bold-Italic;
+    src: url("../fonts/CL-Bold-Italic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: CL-Bold;
+    src: url("../fonts/CL-Bold.ttf") format("opentype");
+}
+
+html, body{
+  height:100%;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e6d9cb;
+}
+
+/* iPhone X Portrait */
+/* @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { */
+
+    #data-inserted{
+      height: 120%;
+      width: auto;
+      position: relative;
+    }
+
+    .container-background{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .background-img{
+      height: 100%;
+      width: 100%;
+    }
+
+    .container-logo{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+
+    .logo{
+      width: 40%;
+      height: auto;
+    }
+
+    .container-text1{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      text-align: center;
+      margin-top: 20vh;
+    }
+
+    .container-text1 p{
+      font-size: 3.5rem;
+      font-family: CL-Bold;
+      color: #603912;
+    }
+
+    .container-smiley{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      text-align: center;
+      margin-top: 33vh;
+    }
+
+    .container-smiley i{
+      font-size: 15rem;
+      color: #603912;
+    }
+
+    .container-text2{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      text-align: center;
+      margin-top: 45vh;
+    }
+
+    .container-text2 p{
+      font-size: 3.5rem;
+      font-family: CL-Bold;
+      color: #603912;
+    }
+
+    .container-button1{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      text-align: center;
+      margin-top: 55vh;
+    }
+
+    .container-button1 p{
+      font-size: 3rem;
+      font-family: CL-Bold-Italic;
+      color: #603912;
+    }
+
+    .button1{
+      display: inline-block;
+      text-decoration: none;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      background-color: #603912;
+      border-radius: 50px;
+      margin-top: -2vh;
+    }
+
+    .button1 p{
+      margin: 0.5rem 0;
+      font-family: CL-Bold;
+      color: #e6d9cb;
+    }
+
+    .footer{
+      position: absolute;
+      height: auto;
+      width: 100%;
+      bottom: 1rem;
+    }
+
+    .footer .copyright{
+      display: inline-block;
+      bottom: -1.2rem;
+      position: absolute;
+      margin-left: 8%;
+    }
+
+    .footer p{
+      font-size: 1.7rem;
+      color: #603912;
+      font-family: CL-Bold;
+    }
+
+    .footer .icons{
+      display: inline-block;
+      float: right;
+      margin-right: 8%;
+    }
+
+    .footer a{
+      text-decoration: none;
+      color: #603912;
+    }
+
+    .footer i{
+      padding: 0 0.5rem;
+    }
+/* } */
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    #data-inserted{
+      height: 100%;
+    }
+}

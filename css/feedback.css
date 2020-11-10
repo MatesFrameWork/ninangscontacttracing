@@ -1,0 +1,423 @@
+@font-face {
+  font-family: CL-Bold-Italic;
+  src: url("../fonts/CL-Bold-Italic.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: CL-Bold;
+  src: url("../fonts/CL-Bold.ttf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e6d9cb;
+}
+
+/* iPhone X Portrait */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { */
+  #data-inserted {
+    height: 120%;
+    width: 100%;
+    position: relative;
+  }
+
+  .container-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .background-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-logo {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo {
+    width: 40%;
+    height: auto;
+  }
+
+  .container-text{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 17vh;
+  }
+
+  .container-text p{
+    font-size: 3.5rem;
+    color: #603912;
+  }
+
+  .container-ambiance-text{
+    position: absolute;
+    color: #603912;
+    font-family: CL-Bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 21vh;
+  }
+
+  .container-ambiance-text p{
+    font-size: 3.5rem;
+  }
+
+  .container-rating1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 25.5vh;
+  }
+
+  .container-star {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+  .rating1:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .rating1:not(:checked)>label {
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #603912;
+  }
+
+  .rating1:not(:checked)>label:before {
+    float: right;
+    content: '★ ';
+    font-size: 8rem;
+  }
+
+  .rating1:not(:checked)>label:hover,
+  .rating1:not(:checked)>label:hover~label {
+    color: red;
+  }
+
+  .rating1>input:checked+label:hover,
+  .rating1>input:checked+label:hover~label,
+  .rating1>input:checked~label:hover,
+  .rating1>input:checked~label:hover~label,
+  .rating1>label:hover~input:checked~label {
+    color: #E797A4;
+  }
+
+  .rating1>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+
+  .container-ambiance{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 31.5vh;
+  }
+
+  .container-ambiance textarea{
+    font-size: 1.5rem;
+    background: transparent;
+    border: 5px solid #603912;
+    border-radius: 30px;
+    height: 15vw;
+  }
+
+  ::placeholder{
+    color: #603912;
+    font-family: CL-Bold-Italic;
+    font-size: 2.5rem;
+  }
+
+  .container-service-text{
+    position: absolute;
+    color: #603912;
+    font-family: CL-Bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 38vh;
+  }
+
+  .container-service-text p{
+    font-size: 3.5rem;
+  }
+
+  .container-rating2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 42.5vh;
+  }
+
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+  .rating2:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .rating2:not(:checked)>label {
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #603912;
+  }
+
+  .rating2:not(:checked)>label:before {
+    float: right;
+    content: '★ ';
+    font-size: 8rem;
+  }
+
+  .rating2:not(:checked)>label:hover,
+  .rating2:not(:checked)>label:hover~label {
+    color: red;
+  }
+
+  .rating2>input:checked+label:hover,
+  .rating2>input:checked+label:hover~label,
+  .rating2>input:checked~label:hover,
+  .rating2>input:checked~label:hover~label,
+  .rating2>label:hover~input:checked~label {
+    color: #E797A4;
+  }
+
+  .rating2>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+
+  .container-service{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 48.5vh;
+  }
+
+  .container-service textarea{
+    font-size: 1.5rem;
+    background: transparent;
+    border: 5px solid #603912;
+    border-radius: 30px;
+    height: 15vw;
+  }
+
+  .container-food-text{
+    position: absolute;
+    color: #603912;
+    font-family: CL-Bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 55vh;
+  }
+
+  .container-food-text p{
+    font-size: 3.5rem;
+  }
+
+  .container-rating3 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 59.5vh;
+  }
+
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+  .rating3:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .rating3:not(:checked)>label {
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #603912;
+  }
+
+  .rating3:not(:checked)>label:before {
+    float: right;
+    content: '★ ';
+    font-size: 8rem;
+  }
+
+  .rating3:not(:checked)>label:hover,
+  .rating3:not(:checked)>label:hover~label {
+    color: red;
+  }
+
+  .rating3>input:checked+label:hover,
+  .rating3>input:checked+label:hover~label,
+  .rating3>input:checked~label:hover,
+  .rating3>input:checked~label:hover~label,
+  .rating3>label:hover~input:checked~label {
+    color: #E797A4;
+  }
+
+  .rating3>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+
+  .container-food{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 65.5vh;
+  }
+
+  .container-food textarea{
+    font-size: 1.5rem;
+    background: transparent;
+    border: 5px solid #603912;
+    border-radius: 30px;
+    height: 15vw;
+  }
+
+  .container-others-text{
+    position: absolute;
+    color: #603912;
+    font-family: CL-Bold-Italic;
+    width: 100%;
+    text-align: center;
+    margin-top: 72.5vh;
+  }
+
+  .container-others-text p{
+    font-size: 3rem;
+  }
+
+  .container-others{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 78.5vh;
+  }
+
+  .container-others textarea{
+    font-size: 1.5rem;
+    background: transparent;
+    border: 5px solid #603912;
+    border-radius: 30px;
+    height: 15vw;
+  }
+
+  .container-button{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 88vh;
+    text-align: center;
+  }
+
+  input.submit-button{
+    font-size: 3rem;
+    color: #e6d9cb;
+    background-color: #603912;
+    border-radius: 30px;
+    padding: 0.5rem 3rem;
+    font-family: CL-Bold;
+  }
+
+  .footer {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    bottom: 1rem;
+  }
+
+  .footer .copyright {
+    display: inline-block;
+    bottom: -1.2rem;
+    position: absolute;
+    margin-left: 8%;
+  }
+
+  .footer p {
+    font-size: 1.7rem;
+    color: #603912;
+    font-family: CL-Bold;
+  }
+
+  .footer .icons {
+    display: inline-block;
+    float: right;
+    margin-right: 8%;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: #603912;
+  }
+
+  .footer i {
+    padding: 0 0.5rem;
+  }
+
+/* } */
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    #data-inserted{
+      height: 100%;
+    }
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    #data-inserted{
+      height: 100%;
+    }
+}
