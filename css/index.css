@@ -101,18 +101,18 @@ html, body{
 
     }
 
-    .container-background-form{
+    /* .container-background-form{
       position: relative;
       height: 100%;
       width: 100%;
-
+      border: 5px solid green;
     }
 
     .background-form-img{
       position: relative;
-      height: 100%;
+      height: auto;
       width: 100%;
-    }
+    } */
 
     .container-logo2{
       position: relative;
@@ -124,30 +124,29 @@ html, body{
     .logo2{
       width: auto;
       height: 10vh;
-
     }
 
     .container-text{
       width: 100%;
       height: auto;
-      position: absolute;
-      top: 0;
+      position: relative;
+      text-align: center;
+      margin-top: -2.5vh;
     }
 
-    #contact-form .text{
+    .container-text .text{
       font-size: 4rem;
       font-family: CL-Bold;
-      margin-top: 11vh;
       font-weight: bold;
       color: #603912;
     }
 
     .form-container{
-      position: absolute;
+      position: relative;
       width: 100%;
       height: auto;
       text-align: center;
-      top: 15vh;
+      top: 0;
     }
 
     #contact-form .form input[type=text],
@@ -161,6 +160,7 @@ html, body{
       border-radius: 20px;
       margin: 1rem 1%;
       background-color: transparent;
+      position: relative;
     }
 
     ::placeholder{
@@ -176,7 +176,7 @@ html, body{
     }
 
     input.middle-name-input{
-      width: 13.5%;
+      width: 15%;
     }
 
     input.last-name-input{
