@@ -14,14 +14,16 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
   $mobileNumber = $_POST["mobileNumber"];
   $email = $_POST["emailAddress"];
 
-  $street = $_POST["street"];
-  $subdivision = $_POST["subdivision"];
-  $barangay = $_POST["barangay"];
-  $town = $_POST["town"];
-  $province = $_POST["province"];
+  $add = $_POST["address"];
+  // $subdivision = $_POST["subdivision"];
+  // $barangay = $_POST["barangay"];
+  // $town = $_POST["town"];
+  // $province = $_POST["province"];
   $zipcode = $_POST["zipcode"];
 
-  $address = $street." ".$subdivision." ".$barangay." ".$town.", ".$province." ".$zipcode;
+  $address = $add." ".$zipcode;
+
+  // $address = $street." ".$subdivision." ".$barangay." ".$town.", ".$province." ".$zipcode;
 
   $temperature = $_POST["temperature"];
 
@@ -33,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $update = 0;
   }
 
+  $date = date("Y-m-d H:i:s");
+
   $server = "localhost";
   $user = "root";
   $pass = "Aeron0005";
@@ -41,15 +45,15 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 
   if ($conn){
 
-    $insert = "INSERT INTO contact_tracing_tb (name, mobile_number, email, address, temperature, update_news)
-    VALUES('" .$name. "','".$mobileNumber."','".$email."','".$address."','".$temperature."','".$update."')";
+    $insert = "INSERT INTO contact_tracing_tb (name, mobile_number, email, address, temperature, update_news, date_visited)
+    VALUES('".$name."','".$mobileNumber."','".$email."','".$address."','".$temperature."','".$update."','".$date."')";
 
-    mysqli_query($conn,$insert);
+    $test = mysqli_query($conn,$insert);
 
   }
 
     mysqli_close($conn);
 
-  // header("location: ../insertdata.php");
+  header("location: ../insertdata.php");
 }
 ?>

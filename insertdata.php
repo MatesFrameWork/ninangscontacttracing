@@ -33,11 +33,11 @@
 
         <div class="container-button1">
           <!-- <p>Participate in Customer Survey?</p> -->
-          <a href="index.php">
+          <!-- <a href="javascript:window.close()">
             <div class="button1">
               <p>DONE</p>
             </div>
-          </a>
+          </a> -->
         </div>
 
         <div class="footer">

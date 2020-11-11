@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Ninang's Kitchen</title>
     <link rel="icon" type="image/svg+xml" href="images/logo1.png">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index1.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -15,7 +15,7 @@
 
       <section id="contact-form">
         <div class="container-logo2">
-          <img src="images/logo2.png" class="logo2">
+          <img src="images/logo1.png" class="logo2">
         </div>
         <!-- <div class="container-background-form">
           <img src="images/form_img.jpg" class="background-form-img">
@@ -26,32 +26,31 @@
         <div class="form-container">
           <form class="form" action="php/insertdata.php" method="post">
 
-            <img src="images/Rectangle.png" class="rectangle2">
+            <!-- <img src="images/Rectangle.png" class="rectangle2"> -->
             <input type="text" id="firstName" name="firstName" placeholder="First Name" class="first-name-input" required>
 
-            <img src="images/Rectangle.png" class="rectangle3">
+            <!-- <img src="images/Rectangle.png" class="rectangle3"> -->
             <input type="text" id="middleName" name="middleName" placeholder="M.I." class="middle-name-input" required>
 
-            <img src="images/Rectangle.png" class="rectangle4">
+            <!-- <img src="images/Rectangle.png" class="rectangle4"> -->
             <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="last-name-input" required>
             <br>
 
-            <img src="images/Rectangle.png" class="rectangle1">
+            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
             <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required>
 
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
+            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <br><br><br>
 
-            <img src="images/Rectangle.png" class="rectangle5">
-            <textarea name="address" rows="8" cols="80" placeholder="Residence Address"></textarea>
+            <textarea name="address" rows="8" cols="80" placeholder="Residence Address" class="txt1"></textarea>
 
             <br><br><br>
 
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="zipcode" name="zipcode" placeholder="ZIP" required>
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="temperature" name="temperature" placeholder="Temperature" required>
+            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
+            <input type="text" id="zipcode" name="zipcode" placeholder="ZIP" pattern="[0-9]{4}" required>
+            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
+            <input type="number" id="temperature" name="temperature" placeholder="Temperature" step="0.1" required>
 
             <br><br><br>
             <div class="agreeBox-container">
@@ -66,7 +65,12 @@
               </div>
               <label for="agreeNews">I would also like to be contacted for promos, updates and new offerings from Ninang's Kitchen.</label>
             </div>
-            <input type="submit" value="SUBMIT" class="submit-button">
+
+            <div class="submit-container">
+                <img src="images/SUBMIT.png" class="btn-img">
+                <input type="submit" value=" " class="submit-button">
+            </div>
+
           </form>
 
 
