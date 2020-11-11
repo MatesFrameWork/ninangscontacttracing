@@ -8,6 +8,11 @@
     src: url("../fonts/CL-Bold.ttf") format("opentype");
 }
 
+@font-face {
+    font-family: CL;
+    src: url("../fonts/CL.ttf") format("opentype");
+}
+
 html, body{
   height:100%;
   width:100%;
@@ -154,7 +159,7 @@ html, body{
     #contact-form .form input[type=email],
     #contact-form .form input[type=checkbox]{
       color: #603912;
-      font-family: CL-Bold-Italic;
+      font-family: CL;
       font-size: 3rem;
       border: none;
       border-radius: 20px;
@@ -206,13 +211,14 @@ html, body{
       height: 100%;
       top: -16.5px;
       left: -1%;
-      background:
     }
 
     .form label{
+      position: relative;
+      top: -0.5rem;
       font-size: 2.3rem;
       color: #603912;
-      font-family: CL-Bold-Italic;
+      font-family: CL;
     }
 
     .agreeNews-container{
@@ -308,6 +314,26 @@ html, body{
       width: 33%;
       height: 4vh;
       left: 58%;
+    }
+
+    .rectangle5{
+      margin-top: -0.3vh;
+      position: absolute;
+      width: 84%;
+      height: 11vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea{
+      width: 83%;
+      background:transparent;
+      font-size: 3rem;
+      font-family: CL;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+      height: 10vh;
+      border: none;
     }
 /* } */
 

@@ -37,33 +37,19 @@
             <br>
 
             <img src="images/Rectangle.png" class="rectangle1">
-            <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required>
+            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required>
 
             <img src="images/Rectangle.png" class="rectangle1">
             <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
             <br><br><br>
 
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="street" name="street" placeholder="Street Address" required>
+            <img src="images/Rectangle.png" class="rectangle5">
+            <textarea name="address" rows="8" cols="80" placeholder="Residence Address"></textarea>
 
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="subdivision" name="subdivision" placeholder="Subdivision/Village">
-            <br>
-
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="barangay" name="barangay" placeholder="Barangay" required>
-
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="town" name="town" placeholder="City/Town" required>
-            <br>
-
-            <img src="images/Rectangle.png" class="rectangle1">
-            <input type="text" id="province" name="province" placeholder="Province" required>
+            <br><br><br>
 
             <img src="images/Rectangle.png" class="rectangle1">
             <input type="text" id="zipcode" name="zipcode" placeholder="ZIP" required>
-            <br><br><br>
-
             <img src="images/Rectangle.png" class="rectangle1">
             <input type="text" id="temperature" name="temperature" placeholder="Temperature" required>
 
