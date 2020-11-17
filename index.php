@@ -8,6 +8,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="js/index.js" charset="utf-8"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
   <body>
@@ -26,33 +28,49 @@
         <div class="form-container">
           <form class="form" action="php/insertdata.php" method="post">
 
-            <!-- <img src="images/Rectangle.png" class="rectangle2"> -->
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" class="first-name-input" required>
+            <table class="table-input">
+              <tr>
+                <td><input type="text" id="firstName" name="firstName" placeholder="First Name" class="first-name-input" required></td>
+                <td><input type="text" id="middleName" name="middleName" placeholder="M.I." class="middle-name-input" required></td>
+                <td><input type="text" id="lastName" name="lastName" placeholder="Last Name" class="last-name-input" required></td>
+              </tr>
+            </table>
 
-            <!-- <img src="images/Rectangle.png" class="rectangle3"> -->
-            <input type="text" id="middleName" name="middleName" placeholder="M.I." class="middle-name-input" required>
+            <table class="table-input">
+              <tr>
+                <td><input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required> <br>
+                  <p>Format: 09000000000</p>
+                </td>
+                <td><input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  <p>Format: username@domain</p>
+                </td>
+              </tr>
+            </table>
 
-            <!-- <img src="images/Rectangle.png" class="rectangle4"> -->
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="last-name-input" required>
+            <table class="table-input">
+              <tr>
+                <td><textarea name="address" rows="8" cols="80" placeholder="Residence Address" class="txt1" required></textarea></td>
+              </tr>
+            </table>
+
+            <table class="table-input">
+              <tr>
+                <td><input type="text" id="zipcode" name="zipcode" placeholder="ZIP" pattern="[0-9]{4}" required><br>
+                  <p>Format: 0000</p>
+                </td>
+                <td><input type="number" id="temperature" name="temperature" placeholder="Temperature" min=30 step="0.1" required><br>
+                  <p>Format: 00.0</p>
+                </td>
+              </tr>
+            </table>
+
             <br>
-
-            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
-            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required>
-
-            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
-            <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-            <br><br><br>
-
-            <textarea name="address" rows="8" cols="80" placeholder="Residence Address" class="txt1"></textarea>
-
-            <br><br><br>
-
-            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
-            <input type="text" id="zipcode" name="zipcode" placeholder="ZIP" pattern="[0-9]{4}" required>
-            <!-- <img src="images/Rectangle.png" class="rectangle1"> -->
-            <input type="number" id="temperature" name="temperature" placeholder="Temperature" step="0.1" required>
-
-            <br><br><br>
+            <div class="agreeBox-container">
+              <div class="checkbox-container">
+                <input type="checkbox" id="experienceSickness" name="experienceSickness" class="agree-box">
+              </div>
+              <label for="experienceSickness">I have not experienced cough, colds nor flu in the past 3 days.</label>
+            </div>
             <div class="agreeBox-container">
               <div class="checkbox-container">
                 <input type="checkbox" id="agree" name="agreeBox" class="agree-box" required>

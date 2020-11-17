@@ -35,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $update = 0;
   }
 
+  if (($temperature <= 37.5) && (isset($_POST["experienceSickness"]))){
+
   $date = date("Y-m-d H:i:s");
 
   $server = "localhost";
@@ -55,5 +57,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     mysqli_close($conn);
 
   header("location: ../insertdata.php");
+}
+
+  else{
+    header("location: ../safety.php");
+  }
 }
 ?>

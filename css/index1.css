@@ -57,7 +57,7 @@ html, body{
       /* font-family: CL-Bold; */
       font-weight: bold;
       letter-spacing: 5px;
-      color: #603912
+      color: #603912;
     }
 
     .container-logo{
@@ -154,6 +154,23 @@ html, body{
       top: 0;
     }
 
+    .table-input{
+      position: relative;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* .table-input td{
+      border: 1px solid black;
+    } */
+
+    .table-input p{
+      font-size: 2rem;
+      font-family: CL-Bold;
+      margin-top: -1rem;
+    }
+
     #contact-form .form input[type=text],
     #contact-form .form input[type=number],
     #contact-form .form input[type=email],
@@ -161,8 +178,6 @@ html, body{
       color: #603912;
       font-family: CL;
       font-size: 3rem;
-      /* border: none;
-      border-radius: 20px; */
       border: 3px #603912;
       border-left: 5px #603912;
       border-right: 5px #603912;
@@ -177,19 +192,22 @@ html, body{
     }
 
     .form input{
-      width: 39.5%;
+      width: 95%;
+
     }
 
     input.first-name-input{
-      width: 30%;
+      width: 120%;
     }
 
     input.middle-name-input{
-      width: 15%;
+      width: 40%;
     }
 
     input.last-name-input{
-      width: 30%;
+      position: absolute;
+      width: 120%;
+      float: right;
     }
 
     .agreeBox-container{
@@ -198,6 +216,7 @@ html, body{
       margin-left: auto;
       margin-right: auto;
       text-align: justify;
+      margin-top: 2rem;
     }
 
     .checkbox-container{
@@ -207,6 +226,14 @@ html, body{
       width: 40px;
       height: 40px;
       padding: 0;
+    }
+
+    input#experienceSickness{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -16.5px;
+      left: -1%;
     }
 
     input#agree{
@@ -347,11 +374,10 @@ html, body{
     }
 
     textarea{
-      width: 83%;
+      width: 97.5%;
       background: transparent;
       font-size: 3rem;
       font-family: CL;
-      margin-left: 0.5rem;
       margin-top: 0.5rem;
       height: 10vh;
       border: 3px #603912;
