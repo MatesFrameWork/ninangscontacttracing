@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Ninang's Kitchen</title>
     <link rel="icon" type="image/svg+xml" href="images/logo1.png">
-    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

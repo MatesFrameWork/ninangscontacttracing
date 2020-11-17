@@ -150,7 +150,7 @@ html, body{
       position: relative;
       width: 100%;
       height: auto;
-      text-align: center;
+      /* text-align: center; */
       top: 0;
     }
 
@@ -161,9 +161,9 @@ html, body{
       margin-right: auto;
     }
 
-    /* .table-input td{
+    .table-input td{
       border: 1px solid black;
-    } */
+    }
 
     .table-input p{
       font-size: 2rem;

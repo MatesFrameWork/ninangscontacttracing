@@ -150,7 +150,7 @@ html, body{
       position: relative;
       width: 100%;
       height: auto;
-      text-align: center;
+      /* text-align: center; */
       top: 0;
     }
 
@@ -162,6 +162,7 @@ html, body{
     }
 
     /* .table-input td{
+      text-align: center;
       border: 1px solid black;
     } */
 
@@ -192,21 +193,21 @@ html, body{
     }
 
     .form input{
-      width: 95%;
+      width: 39.75vw;
 
     }
 
     input.first-name-input{
-      width: 120%;
+      width: 33vw;
     }
 
     input.middle-name-input{
-      width: 40%;
+      width: 10vw;
     }
 
     input.last-name-input{
       position: absolute;
-      width: 120%;
+      width: 33vw;
       float: right;
     }
 
@@ -373,11 +374,11 @@ html, body{
     }
 
     textarea{
-      width: 97.5%;
+      width: 82vw;
       background: transparent;
       font-size: 3rem;
       font-family: CL;
-      margin-top: 0.5rem;
+      margin-left: 0.5vw;
       height: 10vh;
       border: 3px #603912;
       border-left: 5px #603912;
