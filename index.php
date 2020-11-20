@@ -39,10 +39,10 @@
             <table class="table-input">
               <tr>
                 <td><input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required> <br>
-                  <p>Format: 09000000000</p>
+<!--                   <p>Format: 09000000000</p> -->
                 </td>
                 <td><input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                  <p>Format: username@domain</p>
+<!--                   <p>Format: username@domain</p> -->
                 </td>
               </tr>
             </table>
@@ -56,10 +56,10 @@
             <table class="table-input">
               <tr>
                 <td><input type="text" id="zipcode" name="zipcode" placeholder="ZIP" pattern="[0-9]{4}" required><br>
-                  <p>Format: 0000</p>
+<!--                   <p>Format: 0000</p> -->
                 </td>
                 <td><input type="number" id="temperature" name="temperature" placeholder="Temperature" min=30 step="0.1" required><br>
-                  <p>Format: 00.0</p>
+<!--                   <p>Format: 00.0</p> -->
                 </td>
               </tr>
             </table>
