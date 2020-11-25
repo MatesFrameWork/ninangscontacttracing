@@ -13,7 +13,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
   <body>
+  
+	<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="107559890595059"
+		theme_color="#d4a88c">
+      </div>
 
       <section id="contact-form">
         <div class="container-logo2">
@@ -39,10 +63,10 @@
             <table class="table-input">
               <tr>
                 <td><input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" pattern="09[0-9]{9}" required> <br>
-<!--                   <p>Format: 09000000000</p> -->
+                  
                 </td>
                 <td><input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-<!--                   <p>Format: username@domain</p> -->
+                  
                 </td>
               </tr>
             </table>
@@ -56,10 +80,10 @@
             <table class="table-input">
               <tr>
                 <td><input type="text" id="zipcode" name="zipcode" placeholder="ZIP" pattern="[0-9]{4}" required><br>
-<!--                   <p>Format: 0000</p> -->
+                  
                 </td>
                 <td><input type="number" id="temperature" name="temperature" placeholder="Temperature" min=30 step="0.1" required><br>
-<!--                   <p>Format: 00.0</p> -->
+                  
                 </td>
               </tr>
             </table>
